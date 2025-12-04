@@ -1,0 +1,9 @@
+stages:
+  - test
+
+test:
+  stage: test
+  script:
+    - echo "Verificando sintaxe do python..."
+    - python -m py_compile app.py
+    - echo "Sintaxe do python verificada com sucesso!"
